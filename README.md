@@ -66,7 +66,7 @@ O aplicativo será iniciado e você verá o menu principal. Você pode interagir
 
 Siga as opções no menu principal para interagir com o sistema. Você pode inserir, remover, atualizar registros de funcionários e endereços, bem como gerar relatórios.
 
-- Video Explicativo de como utilizar o programa
+- Video Explicativo de como utilizar o programa:
     
     Link:
 
