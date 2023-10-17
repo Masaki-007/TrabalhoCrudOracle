@@ -13,42 +13,39 @@ Este é um sistema simples de gerenciamento de Recursos Humanos (RH) que permite
 Certifique-se de que o Oracle Database esteja configurado e em execução. Precisa-se de baixar o drive JDBC para conexão do java com o oracle (Pasta lib no projeto com os arquvios ojdbc8.jar). Você pode usar SQL Developer para executar os scripts SQL fornecidos para criar as tabelas e sequências necessárias:
 
 DROP SEQUENCE funcionario_seq;
-
 DROP SEQUENCE endereco_seq;
-
--- Script para remover a tabela Endereco, se existir
 DROP TABLE Endereco;
--- Script para remover a tabela Funcionario, se existir
 DROP TABLE Funcionario;
 
 CREATE SEQUENCE funcionario_seq;
-
 CREATE SEQUENCE endereco_seq;
 
 -- Tabela Funcionario
 CREATE TABLE Funcionario (
-    funcionario_id NUMERIC DEFAULT funcionario_seq.nextval PRIMARY KEY,
-    nome VARCHAR(255),
-    sexo CHAR(1),
-    idade INT,
-    telefone VARCHAR(20),
-    cpf CHAR(11),
-    cargo VARCHAR(50),
-    setor VARCHAR(50),
-    salario DECIMAL(10, 2)
+    funcionario_id NUMBER DEFAULT funcionario_seq.nextval PRIMARY KEY,
+    nome VARCHAR2(255) NOT NULL,
+    sexo CHAR(1) NOT NULL,
+    idade NUMBER NOT NULL,
+    telefone VARCHAR2(20) NOT NULL,
+    cpf CHAR(11) NOT NULL,
+    cargo VARCHAR2(50) NOT NULL,
+    setor VARCHAR2(50) NOT NULL,
+    salario NUMBER(10, 2) NOT NULL
 );
 
 -- Tabela Endereco associada a Funcionario
 CREATE TABLE Endereco (
-    endereco_id NUMERIC DEFAULT endereco_seq.nextval PRIMARY KEY,
-    funcionario_id INT,
-    rua VARCHAR(255),
-    numero_residencia VARCHAR(10),
-    bairro VARCHAR(50),
-    cep VARCHAR(8), 
-    cidade VARCHAR(100),
+    endereco_id NUMBER DEFAULT endereco_seq.nextval PRIMARY KEY,
+    funcionario_id NUMBER NOT NULL,
+    rua VARCHAR2(255) NOT NULL,
+    numero_residencia VARCHAR2(10) NOT NULL,
+    bairro VARCHAR2(50) NOT NULL,
+    cep VARCHAR2(8) NOT NULL,
+    cidade VARCHAR2(100) NOT NULL,
     FOREIGN KEY (funcionario_id) REFERENCES Funcionario(funcionario_id)
 );
+ 
+ 
 
 
 
