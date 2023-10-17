@@ -10,7 +10,7 @@ Este é um sistema simples de gerenciamento de Recursos Humanos (RH) que permite
 
 ## Configuração do Banco de Dados
 
-Certifique-se de que o Oracle Database esteja configurado e em execução. Precisa-se de baixar o drive JDBC para conexão do java com o oracle (Pasta lib no projeto com os arquvios). Você pode usar SQL Developer para executar os scripts SQL fornecidos para criar as tabelas e sequências necessárias:
+Certifique-se de que o Oracle Database esteja configurado e em execução. Precisa-se de baixar o drive JDBC para conexão do java com o oracle (Pasta lib no projeto com os arquvios ojdbc8.jar). Você pode usar SQL Developer para executar os scripts SQL fornecidos para criar as tabelas e sequências necessárias:
 
 DROP SEQUENCE funcionario_seq;
 
