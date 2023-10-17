@@ -56,7 +56,7 @@ CREATE TABLE Endereco (
 
     Clone este repositório: https://github.com/Masaki-007/TrabalhoCrudOracle.git
 
-    Execute o aplicativo: java Main
+ Execute o aplicativo: java Main
 
 O aplicativo será iniciado e você verá o menu principal. Você pode interagir com o sistema para inserir, remover, atualizar funcionários e endereços, além de gerar relatórios.
 
