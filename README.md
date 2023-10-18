@@ -63,7 +63,7 @@ Siga as opções no menu principal para interagir com o sistema. Você pode inse
 
 - Video Explicativo de como utilizar o programa:
     
-    Link:
+    Link: https://www.youtube.com/watch?v=CM5tBexGzhY&t=59s
 
 
     
